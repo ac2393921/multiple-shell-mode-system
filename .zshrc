@@ -1,6 +1,10 @@
 ###[ Fig pre ]##################################################################
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
+# . "$HOME/.fig/shell/zshrc.pre.zsh"
+
+export PATH=$PATH:/opt/homebrew/bin
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 ###[ ZSH source ]###############################################################
 if [ -d $ZSH_DIR ] && [ -r $ZSH_DIR ] && [ -x $ZSH_DIR ]; then
@@ -22,4 +26,4 @@ eval "$(starship init zsh)"
 
 ###[ Fig post ]#################################################################
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+# . "$HOME/.fig/shell/zshrc.post.zsh"
